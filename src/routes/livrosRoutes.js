@@ -1,6 +1,5 @@
 import express from "express";
 import LivroController from "../Controllers/livrosController.js";
-import { ListCollectionsCursor } from "mongodb";
 
 const router = express.Router();
 
