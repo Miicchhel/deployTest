@@ -20,7 +20,8 @@ class LivroController {
   static cadastrarLivro = async (req, res) => {
     try {
       let livro = new livros(req.body)
-      livro.save();
+      const test = livro.save()
+      console.log('########', await  test);
       res.status(201).send(livro.toJSON());
     } catch (error) {
         res.status(500).send({ message: `${error.message} - falha ao cadastrar o livro`});
